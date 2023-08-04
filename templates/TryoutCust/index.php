@@ -8,6 +8,7 @@
 <div class="row">
         <div class="col-md-12">
     <h1>Customer List</h1>
+    <div class='table-responsive'>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -45,6 +46,7 @@
             <?php endforeach; ?>
         </tbody>
     </table>
+        </div>
     <div class="paginator">
     <ul class="pagination">
         <?= $this->Paginator->first('<< First') ?>
