@@ -56,7 +56,7 @@
         <?= $this->Paginator->last('Last >>') ?>
     </ul>
     <!-- Use a string format for the counter method -->
-    <p><?= $this->Paginator->counter('{{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total') ?></p>
+    <p style='text-align:center;'><?= $this->Paginator->counter('{{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total') ?></p>
 </div>
 </div>
 </div>
