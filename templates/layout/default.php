@@ -27,26 +27,38 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </title>
     <?= $this->Html->meta('icon') ?>
 
+    
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
-    <?= $this->Html->css(['normalize.min', 'milligram.min', 'cake']) ?>
+    <?= $this->Html->css(['normalize.min', 'cake']) ?>
+    
+    <!-- Add jQuery -->
+    <?= $this->Html->script('https://code.jquery.com/jquery-3.6.0.min.js') ?>
+    
+    <!-- Other CSS and JavaScript links -->
+    <?= $this->Html->css('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css') ?>
+    <?= $this->Html->css('custom') ?>
+    <?= $this->Html->script('https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js') ?>
+    <?= $this->Html->script('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js') ?>
+
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <nav class="top-nav">
+    <!-- <nav class="top-nav">
         <div class="top-nav-title">
-            <a href="<?= $this->Url->build('/') ?>"><span>Cake</span>PHP</a>
+           
         </div>
         <div class="top-nav-links">
             <a target="_blank" rel="noopener" href="https://book.cakephp.org/4/">Documentation</a>
             <a target="_blank" rel="noopener" href="https://api.cakephp.org/">API</a>
         </div>
-    </nav>
+    </nav> -->
     <main class="main">
         <div class="container">
+        <a href="<?= $this->Url->build('/') ?>"><img style='width:30%;margin-bottom:4rem;padding-top:1rem;' src='/img/dna-logo.jpeg' /></a>
             <?= $this->Flash->render() ?>
             <?= $this->fetch('content') ?>
         </div>
