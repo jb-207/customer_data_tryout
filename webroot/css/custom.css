@@ -35,7 +35,7 @@ button[type='submit'] {
 
 .pagination li a,
 .pagination li span {
-    padding: 8px 12px;
+    padding: 1vw 1vw;
     color: #007bff;
     border: 1px solid #007bff;
     text-decoration: none;

@@ -5,6 +5,8 @@
 // echo "</pre>";
 ?>
 <div class="container">
+<div class="row">
+        <div class="col-md-12">
     <h1>Customer List</h1>
     <table class="table table-striped">
         <thead>
@@ -53,6 +55,8 @@
     </ul>
     <!-- Use a string format for the counter method -->
     <p><?= $this->Paginator->counter('{{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total') ?></p>
+</div>
+</div>
 </div>
 </div>
 <br />
